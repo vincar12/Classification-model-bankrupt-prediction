@@ -2,7 +2,7 @@
 
 ### 1. Project Overview
 Tujuan dari proyek ini adalah untuk membuat model klasifikasi yang dapat memprediksi apakah suatu usaha akan bangkrut berdasarkan data finansial yang diberikan. Model ini bertujuan mengurangi kerugian dari bank dengan meminimalisir pinjaman kepada usaha yang diprediksi akan bangkrut. <br>
-Deployment: [Deployment](https://huggingface.co/spaces/vincar12/bankrupt_predict)
+Deployment: [Huggingface](https://huggingface.co/spaces/vincar12/bankrupt_predict)
 
 ---
 
@@ -29,30 +29,30 @@ Deployment: [Deployment](https://huggingface.co/spaces/vincar12/bankrupt_predict
 2. **Exploratory Data Analysis (EDA)**:
    - Eksplorasi data dengan tujuan memahami dataset lebih lanjut
 
-4. **Feature Engineering**: Proses dengan tujuan modifikasi data agar dapat diproses oleh model
+3. **Feature Engineering**: Proses dengan tujuan modifikasi data agar dapat diproses oleh model
    - **Cardinality**: Cek kardinalitas atau nilai unik dari dataset, kardinalitas rendah biasanya menandakan data kategorikal alih-alih numerik
    - **Split Data**: Membagi data menjadi data inferensi, target, train, dan test.
    - **Handling Outlier**: Handling data *outlier* dengan menghitung skew dan menggunakan *Z-Score* atau *Tukey's Rule*; lalu dilakukan *capping* dengan *winsorizer*
    - **Feature Selection**: Seleksi fitur-fitur yang digunakan untuk model menggunakan basis analisis korelasi. Jika data bersifat nominal akan menggunakan analisis korelasi *chi squared*, sedangkan pada data numerik akan menggunakan analisis *spearman*.
    - **Balancing, Scaling, Dimension Reduction**: *Balancing* diperlukan agar data tidak hanya mempelajari data mayoritas namun juga minoritas. Sedangkan *scaling* berfungsi menyetarakan angka-angka dalam data agar berada dalam sat skala yang sama. Lalu reduksi dimensi atau PCA digunakan agar model menggunakan fitur yang tidak terlalu banyak untuk mengurangi kemungkinan overfitting.
 
-5. **Model Definition**:
+4. **Model Definition**:
    - Penggunaan model dalam dataset ini dibagi menjadi 4 untuk menemukan model apa yang terbaik untuk memprediksi apakah usaha akan bangkrut. Model-model tersebut adalah: SVM, K-Nearest Neighbors, Decision Tree, Random Forest.
 
-6. **Hyperparameter Tuning**:
+5. **Hyperparameter Tuning**:
    - Tuning hyperparameter bertujuan untuk meningkatkan performa model dengan melihat parameter apa yang paling baik untuk model tersebut.
 
-7. **Model Evaluation**:
+6. **Model Evaluation**:
    - Evaluasi model bertujuan untuk mengetahui tingkat kesalahan dan keberhasilan model dalam memprediksi nilai target setelah dilatih dalam model training.
    - Evaluasi dilakukan dengan melihat nilai *Recall* karena ingin memperkecil kemungkinan model memprediksi sebuah usaha untuk tidak bangkrut namun kenyataannya bangkrut.
 
-8. **Model Saving**:
+7. **Model Saving**:
    - Menyimpan model dengan pickle agar dapat digunakan pada data inference.
      
-9. **Kesimpulan & Rekomendasi**:
+8. **Kesimpulan & Rekomendasi**:
    - Berisi kesimpulan dari proyek ini serta rekomendasi bisnis berdasarkan model yang dibuat.
 
-10. **Inference**:
+9. **Inference**:
     - Dilakukan dalam notebook yang terpisah untuk mengurangi kemungkinan kebocoran data.
 
 ---
