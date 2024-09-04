@@ -17,6 +17,7 @@ Deployment: [Huggingface](https://huggingface.co/spaces/vincar12/bankrupt_predic
 ├── model.pkl                       # Stored model
 ├── README.md                       # Project README file
 ├── README_eng.md                   # Project README file in English
+```
 
 ---
 
