@@ -24,7 +24,7 @@ Deployment: [Huggingface](https://huggingface.co/spaces/vincar12/bankrupt_predic
 ### 3. Workflow
 
 1. **Data Loading & Cleaning**:
-   - Data asli dimuat dari csv dan dibersihkan nama kolomnya.
+   - Data asli dimuat dari csv.
    
 2. **Exploratory Data Analysis (EDA)**:
    - Eksplorasi data dengan tujuan memahami dataset lebih lanjut
