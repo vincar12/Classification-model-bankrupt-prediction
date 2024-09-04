@@ -23,36 +23,28 @@ Deployment: [Huggingface](https://huggingface.co/spaces/vincar12/bankrupt_predic
 
 ### 3. Workflow
 1. **Data Loading & Cleaning**:
-- Load the original data from CSV and clean column names.
-
+  - Load the original data from CSV and clean column names.
 2. **Exploratory Data Analysis (EDA)**:
-- Explore the dataset to better understand the data.
-
+  - Explore the dataset to better understand the data.
 3. **Feature Engineering**: Modify the data so it can be processed by the model.
-- **Cardinality**: Check the cardinality or uniqueness of the dataset, as low cardinality usually indicates categorical rather than numerical data.
-- **Split Data**: Divide the data into inference, target, training, and test sets.
-- **Handling Outliers**: Handle outliers by calculating skewness and using Z-Score or Tukey's Rule; apply capping with a winsorizer.
-- **Feature Selection**: Select features for the model using correlation analysis. For nominal data, use Chi-Square correlation analysis, and for numerical data, use Spearman analysis.
-- **Balancing, Scaling, Dimension Reduction**: Balance the data to avoid bias towards the majority class. Scaling ensures the data is on the same scale, and PCA (Principal Component Analysis) is used for dimensionality reduction to avoid overfitting.
-
+  - **Cardinality**: Check the cardinality or uniqueness of the dataset, as low cardinality usually indicates categorical rather than numerical data.
+  - **Split Data**: Divide the data into inference, target, training, and test sets.
+  - **Handling Outliers**: Handle outliers by calculating skewness and using Z-Score or Tukey's Rule; apply capping with a winsorizer.
+  - **Feature Selection**: Select features for the model using correlation analysis. For nominal data, use Chi-Square correlation analysis, and for numerical data, use Spearman analysis.
+  - **Balancing, Scaling, Dimension Reduction**: Balance the data to avoid bias towards the majority class. Scaling ensures the data is on the same scale, and PCA (Principal Component Analysis) is used for dimensionality reduction to avoid overfitting.
 4. **Model Definition**:
-- Four models were used to find the best one for predicting bankruptcy: SVM, K-Nearest Neighbors, Decision Tree, Random Forest.
-
+  - Four models were used to find the best one for predicting bankruptcy: SVM, K-Nearest Neighbors, Decision Tree, Random Forest.
 5. **Hyperparameter Tuning**:
-- Tuning hyperparameters to improve the model's performance by identifying the best parameters.
-
+  - Tuning hyperparameters to improve the model's performance by identifying the best parameters.
 6. **Model Evaluation**:
-- Evaluate the model to assess its error rate and success in predicting the target variable after training.
-- Focus on Recall since the goal is to minimize the chances of predicting a business as non-bankrupt when it is actually bankrupt.
-
+  - Evaluate the model to assess its error rate and success in predicting the target variable after training.
+  - Focus on Recall since the goal is to minimize the chances of predicting a business as non-bankrupt when it is actually bankrupt.
 7. **Model Saving**:
-- Save the model using pickle for later use in inference.
-
+  - Save the model using pickle for later use in inference.
 8. **Conclusion & Recommendations**:
-- Provide conclusions from the project and business recommendations based on the model.
-
+  - Provide conclusions from the project and business recommendations based on the model.
 9. **Inference**:
-- Inference is performed in a separate notebook to reduce the risk of data leakage.
+  - Inference is performed in a separate notebook to reduce the risk of data leakage.
 
 ---
 
