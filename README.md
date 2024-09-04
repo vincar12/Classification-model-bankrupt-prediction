@@ -29,7 +29,7 @@ Deployment: [Deployment](https://huggingface.co/spaces/vincar12/bankrupt_predict
 2. **Exploratory Data Analysis (EDA)**:
    - Eksplorasi data dengan tujuan memahami dataset lebih lanjut
 
-4. **Feature Engineering**: Feature Engineering adalah proses dengan tujuan modifikasi data agar dapat diproses oleh model
+4. **Feature Engineering**: Proses dengan tujuan modifikasi data agar dapat diproses oleh model
    - **Cardinality**: Cek kardinalitas atau nilai unik dari dataset, kardinalitas rendah biasanya menandakan data kategorikal alih-alih numerik
    - **Split Data**: Membagi data menjadi data inferensi, target, train, dan test.
    - **Handling Outlier**: Handling data *outlier* dengan menghitung skew dan menggunakan *Z-Score* atau *Tukey's Rule*; lalu dilakukan *capping* dengan *winsorizer*
@@ -53,7 +53,7 @@ Deployment: [Deployment](https://huggingface.co/spaces/vincar12/bankrupt_predict
    - Berisi kesimpulan dari proyek ini serta rekomendasi bisnis berdasarkan model yang dibuat.
 
 10. **Inference**:
-   - Dilakukan dalam notebook yang terpisah untuk mengurangi kemungkinan kebocoran data.
+    - Dilakukan dalam notebook yang terpisah untuk mengurangi kemungkinan kebocoran data.
 
 ---
 
