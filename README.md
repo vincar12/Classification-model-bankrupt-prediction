@@ -1,7 +1,7 @@
 # Model Klasifikasi Prediksi Bangkrut
 
 ### 1. Project Overview
-Tujuan dari proyek ini adalah untuk membuat model klasifikasi yang dapat memprediksi apakah suatu usaha akan bangkrut berdasarkan data finansial yang diberikan. Model ini bertujuan mengurangi kerugian dari bank dengan meminimalisir pinjaman kepada usaha yang diprediksi akan bangkrut.
+Tujuan dari proyek ini adalah untuk membuat model klasifikasi yang dapat memprediksi apakah suatu usaha akan bangkrut berdasarkan data finansial yang diberikan. Model ini bertujuan mengurangi kerugian dari bank dengan meminimalisir pinjaman kepada usaha yang diprediksi akan bangkrut. <br>
 Deployment: [Deployment](https://huggingface.co/spaces/vincar12/bankrupt_predict)
 
 ---
